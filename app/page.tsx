@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 export default function Home() {
-  const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 10 });
+  const [timeLeft, setTimeLeft] = useState({ hours: 24, minutes: 0, seconds: 0 });
   const [prevTime, setPrevTime] = useState(timeLeft);
   const [showWarning, setShowWarning] = useState(false);
   const [isFlipping, setIsFlipping] = useState(false);
